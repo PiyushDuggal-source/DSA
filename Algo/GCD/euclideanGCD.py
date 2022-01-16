@@ -1,9 +1,7 @@
 def Euclidean(a, b):
     if b == 0:
         return a
-    rem = a%b
-    # remm = "{:.2f}".format(rem)
-    # print(remm)
+    rem = a % b
     return Euclidean(b, rem)
 
 

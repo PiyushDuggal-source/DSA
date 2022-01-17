@@ -6,6 +6,9 @@ int main()
     int *p;
     int a;
 
+    // if A is a pointer
+    // it will give me the address of the element and *A will give me the value of the array
+
     a = 10; // add = 100
 
     // Assignment of Pointer:
@@ -43,5 +46,16 @@ int main()
     printf("%p\n", b);
     printf("%p\n", b + 1);
     printf("%p\n", &b + 1);
+
+    // ///////////////////////////////////////////////////////////////////////////////////////////////////
+
+    int x = 5;
+    int *y = &x;
+
+    printf("%d", x);  // 5
+    printf("%u", &x); // 100
+    printf("%u", y);  // 100
+    printf("%d", *y); // 5
+    printf("%u", &y); // 1000 ad of pointer
     return 0;
 }

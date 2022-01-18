@@ -3,10 +3,13 @@
 void f(int *p, int *q)
 {
     p = q;
+    // p = 200
+    // *p = j
     *p = 2;
+    // j = 2
 }
 
-int i = 0, j = 1;
+int i = 0, j = 1; // 100, 200
 int main()
 {
     f(&i, &j);

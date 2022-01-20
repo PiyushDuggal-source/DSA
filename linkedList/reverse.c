@@ -12,7 +12,7 @@ void reverse()
     struct node *pre, *cur, *nex;
     pre = 0;
     cur = nex = head;
-    while (nex->next != 0)
+    while (nex != 0)
     {
         nex = nex->next;
         cur->next = pre;

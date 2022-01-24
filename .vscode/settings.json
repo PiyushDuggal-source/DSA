@@ -1,4 +1,10 @@
 {
-"python.formatting.provider": "yapf",
-"editor.fontSize": 20
+  "python.formatting.provider": "yapf",
+  "editor.fontSize": 20,
+  "files.associations": {
+    "*.ejs": "html",
+    "type_traits": "c",
+    "xtr1common": "c",
+    "xutility": "c"
+  }
 }

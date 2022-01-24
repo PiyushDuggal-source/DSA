@@ -21,7 +21,7 @@ int main()
     // f is a function which returns a pointer to a array of pointers to fuction which returns to char
     char (*(*f())[])();
 
-    // f is an array of 3 elements which are pointers to funtions returning pointers to array of 5 elements
+    // f is an array of 3 elements which are pointers to funtions returning pointers to array of 5 characters
     char(*(*f[3])())[5];
     return 0;
 }

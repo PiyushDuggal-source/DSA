@@ -9,19 +9,21 @@ struct parenthesis
 
 struct parenthesis *top, *newEle;
 
-void push(char ele)
+void push(char *ele)
 {
-    printf("%c", ele);
+    printf("%c", ele[1]);
     // newEle  = (struct parenthesis *)malloc(sizeof(struct parenthesis));
     // newEle->data = ele;
 }
 
 void getEle()
 {
-    char expression;
-    char *expp = expression;
-    scanf("%c", expp);
-    printf("%c", expp[1]);
+    char expression[20];
+    char *expp;
+    expp  = expression;
+    scanf("%s", expp);
+    printf("%s", expression);
+    push(expp);
 }
 
 int main()

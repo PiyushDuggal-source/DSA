@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 void home(char *hi)
 {
@@ -15,6 +16,10 @@ int main()
     home(string);
 
     printf("The string you entered is %s\n", string);
+    for (int i = 0; i != strlen(string); i++)
+    {
+        printf("%c", strptr[i]);
+    }
 
     return 0;
 }

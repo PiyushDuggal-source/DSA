@@ -3,7 +3,7 @@
 using namespace std;
 
 // CLASS
-class Ractangle
+class Rectangle
 {
 private:
     int length;
@@ -41,7 +41,7 @@ private:
 int main()
 {
 
-    Ractangle r;
+    Rectangle r;
     r.initialize(20, 40);
     int ar = r.area();
     printf("%d", ar);

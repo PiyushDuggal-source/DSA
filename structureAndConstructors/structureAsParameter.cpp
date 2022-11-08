@@ -2,27 +2,27 @@
 
 using namespace std;
 
-struct Ractangle
+struct Rectangle
 {
     int length;
     int breadth;
 };
 
 // This is PASS BY VALUE - The object is coppied in the function
-int add(struct Ractangle r)
+int add(struct Rectangle r)
 {
     return r.length * r.breadth;
 }
 
 // This is CALL BY REFERENCE - new Object will not be created
-int add1(struct Ractangle &r)
+int add1(struct Rectangle &r)
 {
     return r.length * r.breadth;
 }
 
 // This is CALL BY ADDRESS
 // Here we are recieving an address, so we used a Pointer
-void changeLength(struct Ractangle *r, int l)
+void changeLength(struct Rectangle *r, int l)
 {
     r->length = l;
 }
@@ -42,7 +42,7 @@ void fun(struct ArrayInStruct ais)
 int main()
 {
 
-    struct Ractangle r = {2, 5};
+    struct Rectangle r = {2, 5};
 
     printf("%d", add(r));
     // We are passing the address of the ractangle object

@@ -2,7 +2,7 @@
 
 using namespace std;
 
-class Ractangle
+class Rectangle
 {
 private:
     int length;
@@ -10,10 +10,10 @@ private:
 
 public:
     // This is a NON - ARGUMENT Constructor
-    Ractangle() { length = breadth = 1; }
+    Rectangle() { length = breadth = 1; }
 
     // This is called as Constructor OverLoading!
-    Ractangle(int l, int b); // This is just a Signature of a function
+    Rectangle(int l, int b); // This is just a Signature of a function
 
     // These two functions are Facilitators
     int area();
@@ -26,34 +26,34 @@ public:
     void setLength(int l) { length = l; }
 
     // This is a Distructor
-    ~Ractangle();
+    ~Rectangle();
 };
 
 // Implementation of functions outside the CLASS | :: is called Scope Resolution
-Ractangle::Ractangle(int l, int b)
+Rectangle::Rectangle(int l, int b)
 {
     length = l;
     breadth = b;
 }
 
-int Ractangle::area()
+int Rectangle::area()
 {
     return length * breadth;
 }
 
-int Ractangle::parimeter()
+int Rectangle::parimeter()
 {
     return 2 * (length + breadth);
 }
 
-Ractangle::~Ractangle()
+Rectangle::~Rectangle()
 {
     // if you have any `de-allocation` you can do in the Distructor Fuction
 }
 
 int main()
 {
-    Ractangle r(20, 40);
+    Rectangle r(20, 40);
     cout << r.area() << endl;
     cout << r.parimeter() << endl;
     r.setLength(50);

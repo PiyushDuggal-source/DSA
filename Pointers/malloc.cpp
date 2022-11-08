@@ -16,7 +16,7 @@ int main()
     free(p);
     /// C++ Style
     p = new int[5];
-    printf("%d", sizeof(p));
+    printf("%lu", sizeof(p));
     /// Deletion of the Memory
     delete p;
     return 0;

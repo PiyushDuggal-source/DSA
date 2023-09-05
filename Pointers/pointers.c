@@ -56,10 +56,10 @@ int main() {
   int *y = &x;
 
   printf("%d", x);  // 5
-  printf("%u", &x); // 100
-  printf("%u", y);  // 100
+  printf("%p", &x); // 100
+  printf("%p", y);  // 100
   printf("%d", *y); // 5
-  printf("%u", &y); // 1000 ad of pointer
+  printf("%p", &y); // 1000 ad of pointer
   printf("\n This is *y + 1 = %d", *y + 1);
   return 0;
 }
